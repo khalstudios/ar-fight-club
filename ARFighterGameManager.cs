@@ -15,7 +15,6 @@ public class ARFighterGameManager : MonoBehaviourPunCallbacks
     void Start()
     {
         infoPanelUIGameObject.SetActive(true);
-        informText.text = "Search for Games to Battle!";
     }
 
     // Update is called once per frame
