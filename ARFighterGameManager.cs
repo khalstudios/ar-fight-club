@@ -11,6 +11,8 @@ public class ARFighterGameManager : MonoBehaviourPunCallbacks
     public GameObject infoPanelUIGameObject;
     public TextMeshProUGUI informText;
     public GameObject searchForGamesButtonGameObject;
+    public GameObject adjustButtonGameobject;
+    public GameObject placeButtonGameObject;
     // Start is called before the first frame update
     void Start()
     {
@@ -28,6 +30,8 @@ public class ARFighterGameManager : MonoBehaviourPunCallbacks
         informText.text = "Searching for available rooms...";
         PhotonNetwork.JoinRandomRoom();
         searchForGamesButtonGameObject.SetActive(false);
+        adjustButtonGameobject.SetActive(false);
+        placeButtonGameObject.SetActive(false);
     }
 
     public override void OnJoinRandomFailed(short returnCode, string message) {

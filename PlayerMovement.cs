@@ -57,7 +57,8 @@ public class PlayerMovement : MonoBehaviour
             animator.SetFloat("Velocity", 0.0f);
         }
 
-        _rigidbody.MovePosition(_rigidbody.position + _moveVector);
+        //_rigidbody.MovePosition(_rigidbody.position + _moveVector);
+        _rigidbody.MovePosition(_rigidbody.position + _moveVector * _joystick.Direction.magnitude);
     }
 
     

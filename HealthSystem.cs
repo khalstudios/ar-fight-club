@@ -7,7 +7,7 @@ public class HealthSystem : MonoBehaviour, IPunObservable
 {
     public int health = 100;
     [SerializeField] GameObject hitVFX;
-    [SerializeField] float destroyDelay = 3f;
+    [SerializeField] float destroyDelay = 2.5f;
  
     Animator animator;
     PhotonView photonView;
